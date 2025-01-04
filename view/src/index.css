@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Общий контейнер */
+.data-table-container {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Стили таблицы */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
+}

@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import "./DataTable.css"; // Подключаем CSS файл
 
 class DataTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentPage: 1,
-      rowsPerPage: 5, // Количество записей на странице по умолчанию
+      rowsPerPage: 5, 
     };
   }
 
@@ -42,7 +41,9 @@ class DataTable extends Component {
             <tr>
               <th>ID</th>
               <th>Имя</th>
-              <th>Возраст</th>
+              <th>ОГРН</th>
+              <th>КПП</th>
+              <th>Статус</th>
               <th>Действия</th>
             </tr>
           </thead>
@@ -51,7 +52,9 @@ class DataTable extends Component {
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.name}</td>
-                <td>{item.age}</td>
+                <td>{item.OGRN}</td>
+                <td>{item.KPP}</td>
+                <td>{item.status}</td>
                 <td>
                     <button row-id={item.id} onClick={(e) => this.deleteRow(e)}>Удалить</button>
                 </td>
@@ -60,7 +63,6 @@ class DataTable extends Component {
           </tbody>
         </table>
 
-        {/* Вариатор количества записей */}
         <div className="controls">
           <label htmlFor="rowsPerPage">Rows per page:</label>
           <select
@@ -73,7 +75,6 @@ class DataTable extends Component {
           </select>
         </div>
 
-        {/* Пагинация */}
         <div className="pagination">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
