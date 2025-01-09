@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Table } from "./Table";
+import { Table } from "./table/Table";
 import './index.css'
 
 export default function App() {

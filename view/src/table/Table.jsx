@@ -1,10 +1,10 @@
 import React from 'react';
-import DataTable from './DataTable';
+import OrganizationsTable from './OrganizationsTable';
 import { response } from './data';
 
 const Table = () => {
     const data = response;
-    return <DataTable data={data} all={data.length}/>;
+    return <OrganizationsTable data={data} all={data.length}/>;
 };
 
 export {Table};

@@ -16,7 +16,7 @@ code {
 /* Общий контейнер */
 .data-table-container {
   margin: 20px auto;
-  max-width: 800px;
+  width: 98%;
   text-align: center;
 }
 
@@ -25,6 +25,13 @@ code {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+}
+
+.data-table-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  justify-content: center;
 }
 
 .data-table th,

@@ -1,0 +1,48 @@
+const response = [
+    {
+      id: 1,
+      name: "ОАО «Куликов, Лукина и Потапова»",
+      OGRN: "3093945898797",
+      KPP: "331755466",
+      status: "Неактивен",
+      packages: 39,
+      docs: 3,
+      register_date: "2015-08-25",
+      short_name: "трубка",
+      license_number: "398",
+      license_date: "2015-09-01",
+      foundation_year: 2019,
+      region: "с. Данков",
+      municipality: "сутки",
+      legal_address: "с. Урюпинск, ул. Лазурная, д. 171 стр. 5/1, 872004",
+      phone: "83795084416",
+      email: "lukinviktorin@yahoo.com",
+      organization_type: "ООО",
+      legal_form: "Муниципальная организация",
+      manager_name: "Конон Артемьевич Горбунов"
+    },
+    {
+      id: 2,
+      name: "ИП «Галкин-Лыткин»",
+      OGRN: "1524214497819",
+      KPP: "944511180",
+      status: "Активен",
+      packages: 33,
+      docs: 32,
+      register_date: "2018-04-02",
+      short_name: "дорогой",
+      license_number: "855",
+      license_date: "2015-02-15",
+      foundation_year: 1943,
+      region: "д. Устюжна",
+      municipality: "госпожа",
+      legal_address: "с. Усть-Кут, алл. Полярная, д. 54, 389812",
+      phone: "8 166 763 3007",
+      email: "czhuravleva@hotmail.com",
+      organization_type: "ООО",
+      legal_form: "Муниципальная организация",
+      manager_name: "Лаврентий Изотович Калинин"
+    },
+]
+
+export {response}
